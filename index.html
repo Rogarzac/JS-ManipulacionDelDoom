@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario Registro Paciente</title>
+    <!--styles de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Style personal-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--Trabajaremos con el grid para que nuestra pagina sea responsiva-->
+    <!--Contenedor padre-->
+    <div class="container" id="containerPadre">
+        <h1 id="titulo">Formulario de Registro de Pacientes</h1>
+
+        <!-- Div para crear mi fila 1-->
+
+        <div class="row" id="filaUno">
+            <!--Div para mi columna 1/2-->
+            <div class="col">
+                <img src="./Image20230913102815.jpg" alt="">
+
+            </div> <!--Aqui termina mi columna 1/2-->
+
+            <!--Div para mi columna 2/2-->
+            <div class="col">
+
+
+                <form class="formulario">
+
+                    <div class="form-group">
+                        <label for="nombrePaciente">Nombre del paciente:</label>
+                        <input type="text" class="form-control" id="nombrePaciente" placeholder="Nombre Paciente">
+                    </div>
+
+                    <br>
+
+                    <div class="form-group">
+                        <label for="edadPaciente">Edad:</label>
+                        <input type="number" class="form-control" id="edadPaciente" placeholder="Edad" min="0"
+                            max="100">
+                    </div>
+
+                    <br>
+                    <button type="button" class="btn btn-primary" id="btnRegistrarPaciente">Registrar Paciente</button>
+                </form>
+
+
+
+
+
+
+            </div> <!--Aqui termina mi columna 2/2-->
+
+
+
+
+        </div> <!--Aqui termina mi fila 1-->
+
+
+    </div> <!--Aqui termina mi contenedor padre-->
+    <!--Contenedor para mostrar el mensaje de "paciente registrado correctamente"-->
+    <div class="container" id="mensajeConfirmacion">
+
+    </div> <!--Aqui termina mi contenedor para mensaje-->
+
+
+
+    <!--Contenedor para mostrar las tarjetas del paciente-->
+    <div class="container">
+        <div class="row" id="contenedorTarjetas">
+
+        </div><!--cierra de la fila-->
+    </div><!--cierre de contenedor -->
+
+    <!--Scripts de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!--Scripts personal-->
+    <script src="./sistemaDeRegistro.js"></script>
+
+</body>
+
+</html>
